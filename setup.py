@@ -13,6 +13,7 @@ REQUIREMENTS_FILE = os.path.join(PROJECT_ROOT, "requirements.txt")
 README_FILE = os.path.join(PROJECT_ROOT, "README.md")
 VERSION_FILE = os.path.join(PROJECT_ROOT, "quantile_dotplot", "__init__.py")
 
+
 def get_long_description():
     with codecs.open(README_FILE, "rt") as buff:
         return buff.read()
