@@ -40,7 +40,7 @@ Here are three plots using [the CASt dataset](https://astrostatistics.psu.edu/da
 This first plot is made with
 
 ```python
-ntile_dotplot(data, dots=20, facecolor="k")
+ntile_dotplot(data, dots=20, facecolor="gold", edgecolor="orangered", linewidth=4)
 ```
 
 ![test](examples/figures/star_brightness7.png)
@@ -48,7 +48,7 @@ ntile_dotplot(data, dots=20, facecolor="k")
 If we wish for more granularity, we can use
 
 ```python
-ntile_dotplot(data, dots=50, hist_bins=20, facecolor="k")
+ntile_dotplot(data, dots=50, hist_bins=20, facecolor="gold", edgecolor="orangered", linewidth=4)
 ```
 
 ![test](examples/figures/star_brightness14.png)
@@ -56,7 +56,7 @@ ntile_dotplot(data, dots=50, hist_bins=20, facecolor="k")
 Once you are using lots and lots of dots, maybe turning integration into counting is a hard task, and you should think about using fewer dots (each dot here corresponds to 1% of the data!)
 
 ```python
-ntile_dotplot(data, dots=100, hist_bins=20, facecolor="k")
+ntile_dotplot(data, dots=100, hist_bins=20, facecolor="gold", edgecolor="orangered", linewidth=4)
 ```
 
 ![test](examples/figures/star_brightness9.png)

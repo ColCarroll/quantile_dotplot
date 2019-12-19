@@ -77,8 +77,10 @@ def ntile_dotplot(data, dots=10, hist_bins="auto", **kwargs):
     if axis is None:
         axis = plt.gca()
     axis.figure.set_dpi(72.0)
-    kwargs.setdefault("edgecolor", "black")
-    kwargs.setdefault("linewidth", 1)
+    ec = kwargs.pop("ec", "black")
+    kwargs.setdefault("edgecolor", ec)
+    lw = kwargs.pop("lw", 1)
+    kwargs.setdefault("linewidth", lw)
 
     circs = axis.scatter(centers, counts, s=1, **kwargs)
     axis.yaxis.set_major_locator(MaxNLocator(integer=True))
