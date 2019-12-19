@@ -11,7 +11,7 @@ if __name__ == "__main__":
     for width, dots, bins in zip((7, 14, 9), (20, 50, 100), ("auto", 20, 20)):
         fig, ax = plt.subplots(figsize=(width, 4))
         data = np.load(here / "magnitudes.npz")["arr"]
-        circs = ntile_dotplot(data, dots=dots, hist_bins=bins, fc="k", ax=ax)
+        circs = ntile_dotplot(data, dots=dots, hist_bins=bins, fc="steelblue", ax=ax)
 
         ax.set_title(f"{dots} dots, {bins} hist_bins")
         ax.set_xlabel("Red band magnitude (inverted, logarithmic)")
